@@ -318,27 +318,32 @@ export default function App() {
     ]
 
     const listTerrorists = terrorists.map(person =>
-        <li>
-            <img
-                src={person.imageUrl}
-            />
-            <p>
-                <p>{person.name}</p>
-                <p>{' ' + person.organization + ' '}</p>
-                <p>{' ' + person.attacksCount + ' '}</p>
-                <p>{' ' + person.status + ' '}</p>
-                <p>{' ' + person.relationToIsraelSummary + ' '}</p>
-            </p>
+        <li className='line'>
+            <img src={person.imageUrl} className='img'/>
+            <p className='name'>{person.name}</p>
+            <p className='organization'>{' ' + person.organization + ' '}</p>
+            <p className='attacks'>{' ' + person.attacksCount + ' '}</p>
+            <p className='status'>{' ' + person.status + ' '}</p>
+            <p className='relation'>{' ' + person.relationToIsraelSummary + ' '}</p>
         </li>
     )
 
     return (
         <>
+            <header>Threat Actor Database</header>
             <nav>
                 <input type="text" placeholder='search by name' />
                 <input type="text" placeholder='search by attacks' />
             </nav>
             <ul>
+                <li className='line'>
+                    <p className='img'>image</p>
+                    <p className='name'>name</p>
+                    <p className='organization'>organization</p>
+                    <p className='attacks'>attacks</p>
+                    <p className='status'>status</p>
+                    <p className='relation'>summary</p>
+                </li>
                 {listTerrorists}
             </ul>
         </>

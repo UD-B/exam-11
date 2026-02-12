@@ -1,0 +1,35 @@
+header {
+    padding: 10px;
+    font-size: xx-large;
+}
+
+.line{
+    display: flex;
+}
+
+.img {
+    min-height: 70px;
+    height: 100%;
+    width: 70px;
+}
+
+.name {
+    margin-left: 50px;
+    width: 200px;
+}
+
+.organization {
+width: 200px;
+}
+
+.attacks {
+width: 100px;
+}
+
+.status {
+width: 100px;
+}
+
+.relation {
+
+}
