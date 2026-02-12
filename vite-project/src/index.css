@@ -17,6 +17,7 @@ nav {
     min-height: 70px;
     height: 100%;
     width: 70px;
+    object-fit: cover;
 }
 
 .name {
