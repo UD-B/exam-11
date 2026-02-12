@@ -1,6 +1,12 @@
 header {
     padding: 10px;
     font-size: xx-large;
+    margin-left: 28px;
+}
+
+nav {
+    margin: 15px;
+    margin-left: 38px;
 }
 
 .line{

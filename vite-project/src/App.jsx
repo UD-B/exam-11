@@ -321,10 +321,10 @@ export default function App() {
         <li className='line'>
             <img src={person.imageUrl} className='img'/>
             <p className='name'>{person.name}</p>
-            <p className='organization'>{' ' + person.organization + ' '}</p>
-            <p className='attacks'>{' ' + person.attacksCount + ' '}</p>
-            <p className='status'>{' ' + person.status + ' '}</p>
-            <p className='relation'>{' ' + person.relationToIsraelSummary + ' '}</p>
+            <p className='organization'>{person.organization}</p>
+            <p className='attacks'>{person.attacksCount}</p>
+            <p className='status'>{person.status}</p>
+            <p className='relation'>{person.relationToIsraelSummary}</p>
         </li>
     )
 
@@ -334,6 +334,8 @@ export default function App() {
             <nav>
                 <input type="text" placeholder='search by name' />
                 <input type="text" placeholder='search by attacks' />
+                <button>filter by status</button>
+                <button>most dangerous terrorist</button>
             </nav>
             <ul>
                 <li className='line'>
